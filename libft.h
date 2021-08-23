@@ -9,5 +9,6 @@ int	ft_isalnum(int c);
 int ft_isascii(int c);
 int ft_isprint(int c);
 size_t ft_strlen(char *c);
+int ft_toupper(int c);
 
 #endif
