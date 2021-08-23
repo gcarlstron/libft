@@ -7,6 +7,7 @@ SRC += ft_strlen.c
 SRC += ft_toupper.c
 SRC += ft_tolower.c
 SRC += ft_strchr.c
+SRC += ft_strrchr.c
 
 OBJ = $(SRC:.c=.o)
 
