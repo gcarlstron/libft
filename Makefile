@@ -5,6 +5,7 @@ SRC += ft_isascii.c
 SRC += ft_isprint.c
 SRC += ft_strlen.c
 SRC += ft_toupper.c
+SRC += ft_tolower.c
 
 OBJ = $(SRC:.c=.o)
 

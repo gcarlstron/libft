@@ -6,11 +6,11 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/23 11:41:54 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/23 12:18:21 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/08/23 12:20:05 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int ft_tolower(int c)
 {
 	if(c >='A' && c <='Z')
 	{
