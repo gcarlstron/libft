@@ -6,6 +6,7 @@ SRC += ft_isprint.c
 SRC += ft_strlen.c
 SRC += ft_toupper.c
 SRC += ft_tolower.c
+SRC += ft_strchr.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -14,7 +15,7 @@ NAME = libft.a
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-		ar rcs $(NAME) $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 .c.o:
 	clang -Wall -Wextra -Werror -c $< -o $(<:.c=.o)
@@ -23,7 +24,7 @@ clean:
 	rm -f $(OBJ)
 
 fclean: clean
-		rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
