@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 19:22:59 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/24 19:25:49 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/08/24 19:33:28 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include <stdlib.h>
 
-void	* ft_memset(void *s, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t len)
 {
 	char	*str;
 
