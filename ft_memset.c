@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/23 12:43:52 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/23 17:59:52 by gpacheco         ###   ########.fr       */
+/*   Created: 2021/08/24 19:22:59 by gpacheco          #+#    #+#             */
+/*   Updated: 2021/08/24 19:25:49 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char * ft_strchr(const char *s, int c)
+# include <stdlib.h>
+
+void	* ft_memset(void *s, int c, size_t len)
 {
-	int i;
-	char *p;
-	
-	p = 0;
-	i = 0;
-	while(s[i] != '\0' && s[i] != c)
-		i++;
-	if(s[i] == c)
-		*p = *s+i;
-	return p;
+	char	*str;
+
+	str = (char *)s;
+	while (len < 0)
+	{
+		str[len-1] = c;
+		len--;
+	}
+	return (s);
 }

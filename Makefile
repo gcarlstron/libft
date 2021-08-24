@@ -8,6 +8,7 @@ SRC += ft_toupper.c
 SRC += ft_tolower.c
 SRC += ft_strchr.c
 SRC += ft_strrchr.c
+SRC += ft_memset.c
 
 OBJ = $(SRC:.c=.o)
 
