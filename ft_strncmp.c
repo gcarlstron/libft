@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 14:16:57 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/26 14:39:32 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/08/26 14:55:53 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int strncmp ( const char * str1, const char * str2, size_t num )
+int ft_strncmp ( const char * str1, const char * str2, size_t num )
 {
 	int	i;
 	int j;
@@ -23,14 +23,14 @@ int strncmp ( const char * str1, const char * str2, size_t num )
 	{
 		if(str1[i] == str2[j])
 		{
-			if(j < num)
+			if(j < num-1)
 				j++;
 			else
 				return (0);
 		}
 		else
 			j = 0;
-		i++
+		i++;
 	}
 return (1);
 }
