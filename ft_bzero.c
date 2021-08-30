@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/26 15:31:28 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/26 16:18:48 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/08/30 14:33:25 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@ void	ft_bzero(void *s, size_t n)
 {
 	char * c;
 	c = (char *) s;
-	while(n > 0)
+	while(n-- > 0)
 	{
-		c[n-1] = '\0';
-		n--;
+		*c++ = '\0';
 	}
 }

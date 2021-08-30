@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 12:48:34 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/30 13:47:51 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/08/30 14:32:00 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*memchr(const void *s, int c, size_t n)
 	
 	str = (unsigned char *)s;
 	ch = (unsigned char)c;
-	while(n--)
+	while(n-- > 0)
 	{
 		if (*str++ == ch)
 			return (str);
