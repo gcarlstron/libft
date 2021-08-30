@@ -13,6 +13,7 @@ SRC += ft_strncmp.c
 SRC += ft_bzero.c
 SRC += ft_memcpy.c
 SRC += ft_memmove.c
+SRC += ft_memchr.c
 
 OBJ = $(SRC:.c=.o)
 
