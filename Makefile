@@ -11,7 +11,7 @@ SRC += ft_strrchr.c
 SRC += ft_memset.c
 SRC += ft_strncmp.c
 SRC += ft_bzero.c
-SRV += ft_memcpy
+SRC += ft_memcpy.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -34,6 +34,6 @@ fclean: clean
 re: fclean all
 
 main:
-	clang main.c $(SRC)
+	clang main.c $(SRC) -o app
 
 .PHONY: all clean fclean re
