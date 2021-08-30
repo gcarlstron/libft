@@ -11,6 +11,7 @@ SRC += ft_strrchr.c
 SRC += ft_memset.c
 SRC += ft_strncmp.c
 SRC += ft_bzero.c
+SRV += ft_memcpy
 
 OBJ = $(SRC:.c=.o)
 
