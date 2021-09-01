@@ -16,6 +16,8 @@ SRC += ft_memmove.c
 SRC += ft_memchr.c
 SRC += ft_memcmp.c
 
+
+
 OBJ = $(SRC:.c=.o)
 
 NAME = libft.a
