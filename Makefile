@@ -17,6 +17,7 @@ SRC += ft_memchr.c
 SRC += ft_memcmp.c
 SRC += ft_strlcpy.c
 SRC += ft_strlcat.c
+SRC += ft_strnstr.c
 
 
 
