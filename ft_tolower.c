@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/23 11:41:54 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/23 12:20:05 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/13 12:40:27 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	if(c >='A' && c <='Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		c += 'a' - 'A';
 	}

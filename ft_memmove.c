@@ -6,11 +6,12 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 12:20:33 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/30 14:31:58 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:03:15 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*cdst;
@@ -20,7 +21,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	cdst = (unsigned char *)dst;
 	csrc = (unsigned char *)src;
 	i = 0;
-
 	if (!cdst && !csrc)
 		return (NULL);
 	if (cdst > csrc)

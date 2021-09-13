@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 11:53:06 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/20 12:00:54 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:23:30 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-	if(c >= '0' && c <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }

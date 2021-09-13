@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 12:00:30 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/08/20 12:02:26 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:17:10 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	if(c >= 0 && c <= 177)
+	if (c >= 0 && c <= 177)
 		return (1);
 	return (0);
 }
