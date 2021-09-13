@@ -20,7 +20,7 @@ SRC += ft_strlcat.c
 SRC += ft_strnstr.c
 SRC += ft_atoi.c
 SRC += ft_calloc.c
-
+SRC += ft_strdup.c
 
 
 OBJ = $(SRC:.c=.o)
