@@ -43,7 +43,4 @@ fclean: clean
 
 re: fclean all
 
-main:
-	clang main.c $(SRC)
-
 .PHONY: all clean fclean re
