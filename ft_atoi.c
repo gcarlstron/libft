@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 18:30:59 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/13 12:46:09 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/13 16:35:15 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 
 	num = 0;
 	s = 1;
-	while (isSpace(*str))
+	while (isspace(*str))
 		str++;
 	if (*str == '+' || *str == '-')
 	{
