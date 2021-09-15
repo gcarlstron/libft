@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 17:57:27 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/15 14:06:43 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/15 14:12:06 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	{
 		start++;
 	}
-	if (start == end)
-		return ("");
-	while (end > 0 && trim(s1[end - 1], (char *)set))
+	while (end > start && trim(s1[end - 1], (char *)set))
 	{
 		end--;
 	}
