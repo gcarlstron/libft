@@ -26,6 +26,7 @@ SRC += ft_strjoin.c
 SRC += ft_strtrim.c
 SRC += ft_split.c
 SRC += ft_itoa.c
+SRC += ft_strmapi.c
 
 OBJ = $(SRC:.c=.o)
 
