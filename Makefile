@@ -32,8 +32,19 @@ SRC += ft_putchar_fd.c
 SRC += ft_putstr_fd.c
 SRC += ft_putendl_fd.c
 SRC += ft_putnbr_fd.c
+BNS =  ft_lstnew.c
+BNS += ft_lstadd_front.c
+BNS += ft_lstsize.c
+BNS += ft_lstlast.c
+BNS += ft_lstadd_back.c
+BNS += ft_lstdelone.c
+BNS += ft_lstclear.c
+BNS += ft_lstiter.c
+BNS += ft_lstmap.c
+
 
 OBJ = $(SRC:.c=.o)
+OBJB = $(BNS:.c=.o)
 
 NAME = libft.a
 
@@ -47,10 +58,14 @@ $(NAME):	$(OBJ)
 
 clean:
 	rm -f $(OBJ)
+	rm -f $(OBJB)
 
 fclean: clean
 	rm -f $(NAME)
 
+bonus: $(NAME) $(OBJB)
+	ar rcs $(NAME) $(OBJ) $(OBJB)
+
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
