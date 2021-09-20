@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:17:25 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/17 13:33:56 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/19 17:44:03 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef	structs_list
+{
+void			*content
+struct s_list	*next;
+}		t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
