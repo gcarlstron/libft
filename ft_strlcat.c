@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/01 14:20:52 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/13 13:16:01 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/21 19:57:49 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	destlen(char *dest, size_t size)
 	return (i);
 }
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dsize)
 {
 	size_t	i;
 	size_t	j;
