@@ -16,10 +16,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*r;
 
+	if (ft_strlen((char *)s) < start)
+		return ("");
 	r = malloc(sizeof(char) * len + 1);
 	if (!r)
 		return (NULL);
-	ft_strlcpy(r, "", len + 1)
 	ft_strlcpy(r, s + start, len + 1);
 	return (r);
 }
