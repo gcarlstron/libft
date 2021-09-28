@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 16:22:23 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/15 17:29:07 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/27 17:39:35 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	lenn(int n)
+static	int	len_n(int n)
 {
 	int	len;
 
@@ -25,7 +25,7 @@ int	lenn(int n)
 	return (len);
 }
 
-void	get_str(char *r, int l, int n)
+static	void	n_to_str(char *r, int l, int n)
 {
 	r[l] = '\0';
 	if (n < 0)
@@ -58,10 +58,10 @@ char	*ft_itoa(int n)
 	{
 		ng = 1;
 	}
-	l = lenn(n) + ng;
+	l = len_n(n) + ng;
 	r = (char *)malloc(sizeof(char) * l + 1);
 	if (!r)
 		return (NULL);
-	get_str(r, l, n);
+	n_to_str(r, l, n);
 	return (r);
 }

@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 17:57:27 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/15 14:12:06 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/27 17:42:12 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	trim(char c, char *set)
+static	int	trim(char c, char *set)
 {
 	int	i;
 

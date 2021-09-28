@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:30:56 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/27 12:34:47 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/27 14:52:10 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	r = malloc(sizeof(char) * len + 1);
 	if (ft_strlen((char *)s) < start)
 	{
-		r[len] = '\0';
+		r[0] = '\0';
 		return (r);
 	}
 	if (!r)

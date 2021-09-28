@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 14:50:03 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/15 15:46:41 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/27 17:42:15 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	countw(char const *s, char c)
+static	int	countw(char const *s, char c)
 {
 	int	i;
 	int	count;
@@ -31,7 +31,7 @@ int	countw(char const *s, char c)
 	return (count);
 }
 
-char	*ndup(const char *s1, size_t n)
+static	char	*ndup(const char *s1, size_t n)
 {
 	char	*dup;
 	size_t	i;

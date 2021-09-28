@@ -6,7 +6,7 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/02 14:01:15 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/27 12:34:45 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/27 16:24:02 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,21 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 	j = 0;
-	while (i <= len)
+	while (i + j <= len && haystack[i] != '\0')
 	{
 		if (needle[j] == '\0')
-			return ((char *)haystack + i - j);
-		if (haystack[i] == needle[j])
+			return ((char *)haystack + i);
+		if (haystack[i + j] == needle[j])
 		{
 			j++;
 		}
 		else
+		{
 			j = 0;
-		i++;
+			i++;
+		}
 	}
+	if (needle[j] == '\0' && haystack[i] == needle[j])
+		return ((char *)haystack + i - j);
 	return (NULL);
 }

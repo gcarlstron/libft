@@ -6,13 +6,13 @@
 /*   By: gpacheco <gpacheco@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/20 12:22:28 by gpacheco          #+#    #+#             */
-/*   Updated: 2021/09/13 13:21:47 by gpacheco         ###   ########.fr       */
+/*   Updated: 2021/09/27 16:28:04 by gpacheco         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *c)
+size_t	ft_strlen(const char *c)
 {
 	size_t	len;
 
